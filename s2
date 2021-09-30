@@ -1,0 +1,9 @@
+cd /tmp/
+mkdir /media/setup
+cp -a /media/vda/* /media/setup
+mkdir /lib/setup
+cp -a /.modloop/* /lib/setup
+/etc/init.d/modloop stop
+umount /dev/vda
+mv /media/setup/* /media/vda/
+mv /lib/setup/* /.modloop/
