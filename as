@@ -1,5 +1,5 @@
-#wget https://nl.alpinelinux.org/alpine/v3.14/releases/x86_64/alpine-virt-3.14.2-x86_64.iso
-#dd
+#ip link set dev eth0 up && udhcpc eth0
+#cd /tmp && wget https://raw.githubusercontent.com/Wisherk8/s/main/as && chmod +x as && ./as
 mkdir /media/setup
 cp -a /media/sda1/* /media/setup
 mkdir /lib/setup
