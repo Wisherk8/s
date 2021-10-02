@@ -1,0 +1,4 @@
+#wget 
+mkdir /mnt/vda1
+mount /dev/vda1 /mnt/vda1
+cd /mnt/vda1
