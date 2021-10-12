@@ -8,4 +8,4 @@ cp -a /.modloop/* /lib/setup
 umount /dev/vda
 mv /media/setup/* /media/vda/
 mv /lib/setup/* /.modloop/
-setup-alpine
+#setup-alpine
