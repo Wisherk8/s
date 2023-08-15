@@ -1,4 +1,4 @@
-#cd /tmp && wget https://raw.githubusercontent.com/Wisherk8/s/main/r2 -o download_and_write.sh && chmod +x download_and_write.sh && ./download_and_write.sh
+#cd /tmp && wget https://raw.githubusercontent.com/Wisherk8/s/main/r2 -O download_and_write.sh && chmod +x download_and_write.sh && ./download_and_write.sh
 cd /tmp/
 wget --no-check-certificate https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/x86_64/alpine-virt-3.18.2-x86_64.iso
 dd if=alpine-virt-3.18.2-x86_64.iso of=/dev/vda
