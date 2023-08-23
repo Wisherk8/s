@@ -1,0 +1,18 @@
+apk add dosfstools syslinux
+mydev=/dev/sda
+umount -q $mydev?
+fdisk -w always $mydev <<EOF
+  o
+  n
+  p
+  1
+  2048
+  -0
+  t
+  0c
+  a
+  w
+EOF
+mkdosfs -F32 ${mydev}1
+dd bs=440 count=1 conv=notrunc if=/usr/share/syslinux/mbr.bin of=$mydev
+syslinux ${mydev}1
