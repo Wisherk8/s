@@ -4,6 +4,6 @@ wget s.wk8.ru/apkp
 chmod +x apkp
 ./apkp
 service sshd start
-parted /dev/sda mklabel msdos mkpart primary fat32 2MiB 300MiB mkpa
+parted /dev/sda mklabel msdos mkpart primary fat32 2MiB 300MiB
 rt primary ext4 300Mib 100
 mkdosfs -F32 ${mydev}1
