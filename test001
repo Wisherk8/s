@@ -5,5 +5,5 @@ chmod +x apkp
 ./apkp
 service sshd start
 parted /dev/sda mklabel msdos mkpart primary fat32 2MiB 300MiB mkpa
-rt primary ext4 200Mib 100
+rt primary ext4 300Mib 100
 mkdosfs -F32 ${mydev}1
